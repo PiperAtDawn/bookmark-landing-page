@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+/*COLORS*/
+
+$colors: (
+    //primary
+    softBlue: hsl(231, 69%, 60%),
+    softRed: hsl(0, 94%, 66%),
+    //neutral
+    grayBlue: hsl(229, 8%, 60%),
+    vDarkBlue: hsl(229, 31%, 21%)
+);
+
+@function color ($color-map, $color-name) {
+    @return map-get($color-map, $color-name);
+}
+
+/*************/
+/*CORE RULES*/
+/*************/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding-left: 167px;
+    padding-right: 167px;
+}
